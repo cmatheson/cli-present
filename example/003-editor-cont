@@ -1,0 +1,4 @@
+#!/bin/sh
+
+data=$(dirname $0)/code
+exec vimdiff $data/{a,b}.rb

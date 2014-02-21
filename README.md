@@ -7,11 +7,15 @@ script for the terminal.
 
 ## Usage
 
+    slideshow.sh /path/to/slides/dir
+
 Put all your slides in a directory.  The slides will be displayed in
 alphabetical order.  Subdirectories are ignored (this is useful for storing
 extra data).  Executable files will be executed, other files will be displayed
 using `present.rb` (it just centers the content in the terminal window).  Press
 `q` to go back a slide, press any other key to continue to the next slide.
+
+Try the example: `slideshow.sh ./example`
 
 ## "FAQ"
 
