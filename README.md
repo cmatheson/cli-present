@@ -19,11 +19,11 @@ Try the example: `slideshow.sh ./example`
 
 ## "FAQ"
 
-**Q**: Why not use Keynote, or Powerpoint, or LaTeX, or some random web thing?
+**Q**: Why not use Keynote, or Powerpoint, or LaTeX, or some random web thing?  
 **A**: Maybe you are the type of person that prefers living in the Terminal.
 If not, the ability to run arbitrary programs as slides is real handy.
 
-**Q**: Does it make sense to separate `slideshow.sh` and `present.rb`?
+**Q**: Does it make sense to separate `slideshow.sh` and `present.rb`?  
 **A**: Uh... probably not.  I hacked this together real quick and it kind of
 just happened that way.
 
