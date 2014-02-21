@@ -1,4 +1,4 @@
-cli-present
-===========
+slideshow.sh
+============
 
-It's keynote/powerpoint BUT BETTER
+It's like Keynote/Powerpoint BUT BETTER
