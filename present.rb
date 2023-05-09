@@ -13,7 +13,9 @@ extra_padding   = "\n" unless ((rows - msg_lines) % 2).zero?
 extra_padding ||= ""
 
 msg_line = lambda { |l|
-  padding = " " * ((cols - l.chomp.size) / 2)
+  # line_length excludes any ANSI formatting codes
+  line_length = l.chomp.gsub(/\e\[(\d+)(;\d+)*m/, '').size
+  padding = " " * ((cols - line_length) / 2)
   padding << l.chomp
 }
 
