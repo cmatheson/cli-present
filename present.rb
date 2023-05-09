@@ -24,6 +24,14 @@ print vert_padding +
       vert_padding +
       extra_padding
 
-if IO.console.getch == "q"
+char = IO.console.getch
+case char
+when "q"
   exit 1
+when "\e"
+  # left arrow handling
+  IO.console.getch
+  exit 1 if IO.console.getch == "D"
+when "Q"
+  exit 99
 end

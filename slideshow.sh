@@ -21,7 +21,10 @@ while [ -n "${slides[$i]}" ]; do
     ${slides[$i]}
   else
     ./present.rb "$(cat ${slides[$i]})"
-    if [ $? -ne 0 ]; then
+    status=$?
+    if [ $status -eq 99 ]; then
+      exit
+    elif [ $status -ne 0 ]; then
       (( i-- ))
       clear
       continue
@@ -29,6 +32,4 @@ while [ -n "${slides[$i]}" ]; do
   fi
 
   (( i++ ))
-
-  clear
 done
