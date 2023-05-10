@@ -6,6 +6,9 @@ slide_dir=$1
 
 slides=
 
+trap 'echo -e "\e[?25h"' EXIT
+echo -e "\e[?25l"
+
 i=0
 for slide in $slide_dir/*; do
   [ -d $slide ] && continue
